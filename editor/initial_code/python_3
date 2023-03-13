@@ -1,19 +1,16 @@
-def soma(a,b):
+def collatz_sequence(a):
     # escreva aqui seu código
     return None
 
 
 print("Example:")
-print(soma(3,2))
+print(collatz_sequence(5))
 
 # As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
-# testa a função com números positivos como parâmetros
-assert soma(2, 3) == 5 
-    
-# testa a função com um número negativo como parâmetro
-assert soma(-1, 5) == 4
-    
-# testa a função com zero como parâmetro
-assert soma(0, 0) == 0
+assert collatz_sequence(1) == [1] 
+assert collatz_sequence(2) == [2, 1] 
+assert collatz_sequence(3) == [3, 10, 5, 16, 8, 4, 2, 1] 
+assert collatz_sequence(4) == [4, 2, 1] 
+assert collatz_sequence(5) == [5, 16, 8, 4, 2, 1]
     
 print("Seu código passou pelos testes, clique em Check para avançar!")
