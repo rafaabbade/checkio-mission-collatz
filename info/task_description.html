@@ -1,17 +1,20 @@
 <!-- Describe task in general -->
 
 <p>
-    Crie uma função que receba dois números inteiros como parâmetros e retorne a soma desses números.
-    <img  title="example" src="{{MEDIA}}collatz.png" alt="example" style="max-height: 300px"/>
+    ia de Collatz é definida como se segue: Começando com qualquer número inteiro positivo, se o número for par, o próximo número da sequência será o resultado da divisão por dois. Se o número for ímpar, o próximo número será o resultado da multiplicação por três e adição de um. O processo se repete até que a sequência chegue ao número um. Escreva uma função que, dado um número inteiro positivo, retorne a sequência de Collatz do número como uma lista.
+Entrada
+</p>
+<p style="text-align:center">
+    <img  title="example" src="{{MEDIA}}collatz.jpeg" alt="example" style="max-height: 300px"/>
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> Dois números inteiros a e b.
+    <strong>Entrada: </strong> consiste em um número inteiro positivo.
 </p>
 
 <p>
-    <strong>Saída: </strong> Um número inteiro, que é a soma de a e b. 
+    <strong>Saída: </strong> deve retornar uma lista contendo a sequência de Collatz do número de entrada, incluindo o próprio número de entrada. 
 </p>
 
 
@@ -26,9 +29,12 @@
 countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
-<pre class="brush: python">soma(2,3) == 5
-soma(-1,5) == 4
-soma(0,0) == 0
+<pre class="brush: python">
+collatz_sequence(1) == [1]
+collatz_sequence(2) == [2, 1]
+collatz_sequence(3) == [3, 10, 5, 16, 8, 4, 2, 1]
+collatz_sequence(4) == [4, 2, 1]
+collatz_sequence(5) == [5, 16, 8, 4, 2, 1]
 </pre>
 {% endif %}
 </div>
