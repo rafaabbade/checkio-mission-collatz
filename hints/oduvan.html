@@ -7,19 +7,29 @@
     </div>
     <div class="answer">
         <p>
-            Primeiro devemos entender o que está no nosso compilador. Veja a imagem abaixo:
+            Dê uma olhada nos problemas anteriores que você resolveu utilizando while, como o "Contagem Progressiva" e "Contagem Pares"
         </p>
      </div>
 </div>
 <div class="question-answer">
     <div class="question">
         <p>
-            Ok, mas onde eu devo programar?
+            Mas como posso inserir os dados da sequência?
         </p>
     </div>
     <div class="answer">
         <p>
-            Escreva seu comentário no comentário logo embaixo da definição da função soma
+            A melhor opção é criar uma variável para armazenar o valor conforme ele for alterado. Por exemplo:
+        </p>
+         <pre class="brush: python">
+collatz = 5
+# vamos alterar o collatz para um valor que é o triplo dele mais um
+collatz = collatz*3+1
+# vamos alterar o collatz para um valor que é metade dele
+collatz = collatz/2
+        </pre>
+        <p>
+            Agora basta inseri-lo na lista da mesma forma que fizemos nos exercícios de contagem.
         </p>
           
      </div>
@@ -27,17 +37,21 @@
 <div class="question-answer">
     <div class="question">
         <p>
-            Posso criar uma variável para me ajudar?
+            Devo utilizar condicionais, certo?
         </p>
     </div>
     <div class="answer">
         <p>
-            Sim, uma das formas de resolver é atribuir/armazenar o valor da operação a+b numa variável nova.
+            Sim, aqui vai um exemplo para facilitar, mas não se acostume:
         </p>
-        
-        <p>
-            Só não se esqueça de retornar o valor desta variável!
-        </p>
+         <pre class="brush: python">
+if temperatura > 30:
+    print("Está calor")
+elif temperatura < 15:
+    print("Está frio")
+else:
+    print("Está agradável")
+        </pre>
           
      </div>
 </div>
